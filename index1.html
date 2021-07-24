@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/base.css">
+    <title>第9週 フォームを使ってみる</title>
+
+</head>
+
+<body>
+    <!-- Page content -->
+    
+    <div class="w3-container w3-content w3-padding-64" style="max-width:600px" id="contact">
+        <h1 class="w3-wide w3-center">CONTACT</h1>
+   
+        <h2 class="w3-wide w3-center">お問い合わせ</h2>
+        <form action="#" method="POST">
+    </div>
+    
+        <div>
+            <label for-"last-name">姓:</label>
+            <input type="text" name="lastname" id=last-name placeholder="ここには姓をいれてね" required>
+
+            <label>
+                名:
+                <input type="text" name="firstname">
+            </label>
+        </div>
+
+        <!-- ラジオボタン -->
+        <!-- value属性の値がサーバーに送信される -->
+        <label>
+            <input type="radio" name="sex" value="male">
+            男性
+        </label>
+
+        <label>
+            <input type="radio" name="sex" value="female">
+            女性
+        </label>
+
+        <label>
+            <input type="radio" name="sex" value="other">
+            その他
+        </label>
+
+        <!--複数行にわたるテキスト入力フィールド  -->
+        <div>
+            <label for="requests">要望</label>
+            <textarea name="requests" id="requests" cols="30" rows="5"></textarea>
+        </div>
+
+        <!-- 電話番後 -->
+        <div>
+            <label>
+                電話番号：
+                <input type="tel">
+            </label>
+        </div>
+
+        <!-- メアド -->
+        <div>
+            <label>
+                メールアドレス： <input type="email">
+            </label>
+        </div>
+
+    
+
+        <!-- データを送信するボタン -->
+        <div> 
+            <input type="submit" value="送信する">
+            <input type="reset" value="リセット">
+        </div>
+
+
+    </form>
+    </div>
+
+
+    <a href="index3.html">Back to the first page</a>
+</body>
+
+</html>
