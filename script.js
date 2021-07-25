@@ -51,4 +51,6 @@ function hello(language){
     }
 
     alert(message);
-}
+};
+
+lightGallery(document.getElementById('lightgallery'));
